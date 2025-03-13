@@ -1,3 +1,112 @@
-h1{
-    background-color: blue;
-}
+/* sidebar.scss */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    border-right: 3px solid #e9ecef;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    width: 250px;
+
+    
+    .top {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #f0f2f5;
+      
+      .logo {
+        font-weight: bold;
+        font-size: 26px;
+        color: #6366f1;
+        letter-spacing: 0.5px;
+        background: linear-gradient(45deg, #6366f1, #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #f0f2f5;
+      margin: 0;
+    }
+    
+    .center {
+      padding: 15px;
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          display: flex;
+          align-items: center;
+          padding: 12px 15px;
+          cursor: pointer;
+          border-radius: 8px;
+          margin-bottom: 5px;
+          transition: all 0.2s ease;
+          
+          &:hover {
+            background-color: #f5f7ff;
+            
+            .icons {
+              color: #6366f1;
+            }
+          }
+          
+          .icons {
+            font-size: 20px;
+            color: #64748b;
+            margin-right: 10px;
+            transition: color 0.2s ease;
+          }
+          
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #334155;
+          }
+        }
+      }
+      
+      .title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #94a3b8;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+      }
+    }
+    
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 15px;
+      
+      .colorOption {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #f587e2;
+        cursor: pointer;
+        margin: 0 10px;
+        
+        &:nth-child(1) {
+          background-color: whitesmoke;
+        }
+        
+        &:nth-child(2) {
+          background-color: #1e293b;
+        }
+      }
+    }
+  }

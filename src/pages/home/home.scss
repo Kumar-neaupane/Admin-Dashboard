@@ -1,6 +1,42 @@
-.bg{
-    background-color: red;
-    .ti{
-        color: azure;
-    }
-}
+/* home.scss */
+.home {
+    display: flex;
+    background-color: #f8fafc;
+    
+    .homeContainer {
+      flex: 6;
+      padding: 20px;
+      background-color: #f8fafc;
+      color: #334155;
+      
+     
+      .widgets {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        
+      }
+      
+      
+      
+         
+         
+            
+            
+          }
+        }
+      
+      
+      
+      @media screen and (max-width: 992px) {
+        .charts {
+          grid-template-columns: 1fr;
+        }
+        
+        .widgets {
+          grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        }
+      }
+    
+  
+  
