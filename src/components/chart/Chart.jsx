@@ -38,10 +38,11 @@ const data = [
     },
   ];
 
-const Chart = () => {
+const Chart = ({aspect,title}) => {
   return (
     <div className="chart">
-       <ResponsiveContainer width="100%" height="100%">
+    <div className="title">{title}</div>
+       <ResponsiveContainer width="100%" height="100%" aspect={aspect}>
         <LineChart
           width={500}
           height={300}

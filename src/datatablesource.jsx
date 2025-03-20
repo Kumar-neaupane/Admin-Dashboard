@@ -1,4 +1,5 @@
-import './components/datatable/datatable.scss'
+import './components/datatable/datatable.scss';
+import {Link} from "react-router-dom"
 
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -37,8 +38,10 @@ export const userColumns = [
     renderCell: () => {
       return (
         <div className="cellActions">
-          <button className="viewButton">View</button>
-          <button className="deleteButton">Delete</button>
+        <Link to="/user/test" style={{textDecoration:"none"}}>
+          <button className="viewButton" >View</button>
+          </Link>
+          <button className="deleteButton" >Delete</button>
         </div>
       );
     },
